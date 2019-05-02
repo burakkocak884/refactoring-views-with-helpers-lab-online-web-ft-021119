@@ -1,5 +1,6 @@
 class Song < ActiveRecord::Base
   belongs_to :artist
+  # calling artist/name if not nil
 
   def artist_name
   	artist.name if !artist.nil?
