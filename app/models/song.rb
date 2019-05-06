@@ -4,8 +4,8 @@ class Song < ActiveRecord::Base
   #setting artist name if found , if not created.
 
   def artist_name
-  	artist.name if !artist.nil?
 
+  	artist.name  if artist
   end
 
   def artist_name=(name)
